@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Moradores</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <h1>Cadastro de Moradores</h1>
+  <form id="moradorForm">
+    <label>Nome: <input type="text" id="nome" required></label>
+    <label>Apartamento: <input type="text" id="apartamento" required></label>
+    <label>Bloco: <input type="text" id="bloco" required></label>
+
+    <h3>Pets</h3>
+    <label>Possui pet?
+      <select id="possuiPet">
+        <option value="nao">Não</option>
+        <option value="sim">Sim</option>
+      </select>
+    </label>
+    <div id="petsContainer"></div>
+    <button type="button" id="addPet">Adicionar Pet</button>
+
+    <h3>Carros</h3>
+    <label>Possui carro?
+      <select id="possuiCarro">
+        <option value="nao">Não</option>
+        <option value="sim">Sim</option>
+      </select>
+    </label>
+    <div id="carrosContainer"></div>
+    <button type="button" id="addCarro">Adicionar Carro</button>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+</body>
+</html>
